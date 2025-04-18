@@ -27,6 +27,6 @@ def items(text_file):
     #will skip a couple of seconds(time?) in final function
     
     #return statement 
-    return f"Player {player} has item {item}!"
+    return f"Player {player} has recieved an item!"
     
                 
