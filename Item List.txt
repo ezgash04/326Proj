@@ -1,0 +1,12 @@
+Item List
+
+Banana
+Coin
+Mushroom
+Golden Mushroom
+Red Shell
+Blue Shell
+Green Shell
+Star
+Lightning
+Boo Steal
