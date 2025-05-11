@@ -39,5 +39,15 @@ def items(text_file, players):
     
     #return statement 
     return f"Player {player.name} has recieved the {item}!"
+
+if __name__ == "main":
+    
+    players = [player_class("Sif"), player_class("Rena"), player_class("Ezra"),
+               player_class("Danu")]
+    
+    filename = input("Item_List.txt")
+    
+    print(items(filename, players))
+    
     
                 
