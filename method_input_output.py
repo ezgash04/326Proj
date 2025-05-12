@@ -56,3 +56,29 @@ def start_game(self):
             print(f"{player.name} is stopped! Recovering now...")
             continue
   
+class Map:
+    def __init__(self, name, duration):
+        self.name = name
+        self.duration = duration
+          
+    def __str__(self):
+        return f"{self.name} ({self.duration} seconds)"
+    
+def __init__(self, players):
+    self. players = players
+    self.maps = [Map("short race", 30), Map("medium race", 60), 
+                 Map("short race", 90) ]
+    self.selected_map = None
+    
+def choose_map(self):
+    print("Choose a map: ")
+    index = 1
+    for map in self.maps:
+        print(f"{index}.{map}")
+        index += 1
+    while True:
+        map_choice = (input(f"30, 60 or 90"))
+        if 1 <= map_choice <= len(self.maps):
+            self.selected_map = self.maps[choice - 1]
+            print(f"You selected {self.selected_map.name}"
+                  f"({self.selected_map.duration} seconds)")
