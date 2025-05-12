@@ -37,3 +37,22 @@ def keep_throw(item):
 powerup = random_item("item list.txt")
 keep_throw(powerup)
 
+#All questions and printed messages to the players, including the seconds, 
+# what item they receive, whether they want to use the item in question, 
+# what map they wish to play, etc. This will need player input and information
+# from other classes/functions used in the program. Any errors while the 
+# program runs will be handled using the classes and functions existing in 
+# the program. Requires a player and game class to store attributes shown in 
+# terminal, and the length of the map the player chooses as well.
+
+def start_game(self):
+    print(f"\n Map selected: {self.map_choice} ---" 
+          f" Race length: {self.race_duration} seconds")
+    print("3, 2, 1, \n START!")
+    
+    for player in self.players:
+        if player.stopped_timer > 0:
+            player.stopped_timer -= 1
+            print(f"{player.name} is stopped! Recovering now...")
+            continue
+  
