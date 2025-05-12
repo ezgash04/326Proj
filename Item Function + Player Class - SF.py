@@ -1,6 +1,4 @@
 import random
-import time
-
 
 
 class player_class:
@@ -35,18 +33,20 @@ def items(text_file, players):
     
     #will skip a couple of seconds after an item is chosen from the list
     print(f"Let's see what item you got!")
-    time.sleep(random.randint(3,4))
     
     #return statement 
     return f"Player {player.name} has recieved the {item}!"
 
 if __name__ == "main":
     
+    #making a list using player objects
     players = [player_class("Sif"), player_class("Rena"), player_class("Ezra"),
                player_class("Danu")]
     
+    #inputting the text file
     filename = input("Item_List.txt")
     
+    #printing the output
     print(items(filename, players))
     
     
