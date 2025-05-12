@@ -16,10 +16,10 @@ def generate_event(track_length):
         'type': event_type,
         'time_impact': time_impact
     }
-def calculate_average_time(track_length, seconds_per_unit = 1.0):
+def calculate_average_time(track_length, seconds_per_unit = 0.5):
     return seconds_per_unit * track_length
 
-def generate_map(track_length, seconds_per_unit = 1.0, num_events = 10):
+def generate_map(track_length, seconds_per_unit = 0.5, num_events = 15):
     events = [generate_event(track_length) for _ in range(num_events)]
     normal_time = calculate_average_time(track_length, seconds_per_unit)
     total_time_change = sum(event['time impact'] for event in events)
