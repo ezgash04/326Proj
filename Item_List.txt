@@ -1,0 +1,12 @@
+Item List
+
+Banana Peel- obstacle
+Coin - boost
+Mushroom - boost
+Golden Mushroom - boost
+Red Shell - obstacle
+Blue Shell - obstacle
+Green Shell - obstacle
+Star - boost
+Lightning - obstacle
+Boo Steal - obstacle
